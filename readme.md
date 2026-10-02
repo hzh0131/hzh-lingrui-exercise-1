@@ -62,6 +62,7 @@ READ of size 4 at 0x... thread T0
 ---
 
 > 下面我将通过代码块与运行结果实例分别阐释一下我每个函数的实现思路
+===================== 生命周期 =====================
 ### int vector_init(vector *v, size_t capacity)
 ```c
 int vector_init(vector *v, size_t capacity) 
@@ -125,6 +126,9 @@ void vector_destroy(vector *v) {
 > 踩过的坑
   - 受上一题的影响，一开始是把整个v free掉而不是free掉v->data。  
 
+
+===================== 容量与大小 =====================
+
 ### size_t size(const vector *v)
 ```c
 size_t size(const vector *v) {
@@ -168,6 +172,7 @@ int empty(const vector *v) {
 >踩过的坑
   - 无
 
+===================== 元素访问 =====================
 ### int get(const vector *v, size_t index, int *out)   
 ```c
 int get(const vector *v, size_t index, int *out) {
