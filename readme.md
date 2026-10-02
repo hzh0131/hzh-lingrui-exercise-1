@@ -62,7 +62,9 @@ READ of size 4 at 0x... thread T0
 ---
 
 > 下面我将通过代码块与运行结果实例分别阐释一下我每个函数的实现思路
+
 ===================== 生命周期 =====================
+
 ### int vector_init(vector *v, size_t capacity)
 ```c
 int vector_init(vector *v, size_t capacity) 
